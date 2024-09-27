@@ -13,9 +13,14 @@
 		84F91D192CA43EA40072C295 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84F91D182CA43EA40072C295 /* Base */; };
 		84F91D1B2CA43EA50072C295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F91D1A2CA43EA50072C295 /* Assets.xcassets */; };
 		84F91D1E2CA43EA50072C295 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84F91D1D2CA43EA50072C295 /* Base */; };
+		84F91D272CA43EB20072C295 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 84F91D262CA43EB20072C295 /* AppsFlyerLib */; };
+		84F91D2A2CA43EBF0072C295 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F91D292CA43EBF0072C295 /* AdSupport.framework */; };
+		84F91D2C2CA440F30072C295 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84F91D2B2CA440F30072C295 /* Podfile */; };
+		CFE647ADAF83A9A75B7476FE /* Pods_HelloWorld2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F6607CD9C090586FED8059 /* Pods_HelloWorld2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48F6607CD9C090586FED8059 /* Pods_HelloWorld2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F91D0E2CA43EA40072C295 /* HelloWorld2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F91D112CA43EA40072C295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F91D132CA43EA40072C295 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,10 @@
 		84F91D1A2CA43EA50072C295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F91D1D2CA43EA50072C295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F91D1F2CA43EA50072C295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F91D292CA43EBF0072C295 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		84F91D2B2CA440F30072C295 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		929865479B92C84DF57B2E53 /* Pods-HelloWorld2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld2.release.xcconfig"; path = "Target Support Files/Pods-HelloWorld2/Pods-HelloWorld2.release.xcconfig"; sourceTree = "<group>"; };
+		9E443DC7250CEB99F48DDAAD /* Pods-HelloWorld2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld2.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld2/Pods-HelloWorld2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F91D2A2CA43EBF0072C295 /* AdSupport.framework in Frameworks */,
+				84F91D272CA43EB20072C295 /* AppsFlyerLib in Frameworks */,
+				CFE647ADAF83A9A75B7476FE /* Pods_HelloWorld2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +52,11 @@
 		84F91D052CA43EA40072C295 = {
 			isa = PBXGroup;
 			children = (
+				84F91D2B2CA440F30072C295 /* Podfile */,
 				84F91D102CA43EA40072C295 /* HelloWorld2 */,
 				84F91D0F2CA43EA40072C295 /* Products */,
+				84F91D282CA43EBF0072C295 /* Frameworks */,
+				DC29B072CC1A3BB71E499D29 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,24 @@
 			path = HelloWorld2;
 			sourceTree = "<group>";
 		};
+		84F91D282CA43EBF0072C295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F91D292CA43EBF0072C295 /* AdSupport.framework */,
+				48F6607CD9C090586FED8059 /* Pods_HelloWorld2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC29B072CC1A3BB71E499D29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E443DC7250CEB99F48DDAAD /* Pods-HelloWorld2.debug.xcconfig */,
+				929865479B92C84DF57B2E53 /* Pods-HelloWorld2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +107,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F91D222CA43EA50072C295 /* Build configuration list for PBXNativeTarget "HelloWorld2" */;
 			buildPhases = (
+				997CD7DE8BF3A76A19992584 /* [CP] Check Pods Manifest.lock */,
 				84F91D0A2CA43EA40072C295 /* Sources */,
 				84F91D0B2CA43EA40072C295 /* Frameworks */,
 				84F91D0C2CA43EA40072C295 /* Resources */,
+				4AC26EDAAB0B1A2EDE77E2AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = HelloWorld2;
+			packageProductDependencies = (
+				84F91D262CA43EB20072C295 /* AppsFlyerLib */,
+			);
 			productName = HelloWorld2;
 			productReference = 84F91D0E2CA43EA40072C295 /* HelloWorld2.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 84F91D052CA43EA40072C295;
+			packageReferences = (
+				84F91D252CA43EB20072C295 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			productRefGroup = 84F91D0F2CA43EA40072C295 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,11 +168,54 @@
 			files = (
 				84F91D1B2CA43EA50072C295 /* Assets.xcassets in Resources */,
 				84F91D1E2CA43EA50072C295 /* Base in Resources */,
+				84F91D2C2CA440F30072C295 /* Podfile in Resources */,
 				84F91D192CA43EA40072C295 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AC26EDAAB0B1A2EDE77E2AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld2/Pods-HelloWorld2-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorld2/Pods-HelloWorld2-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorld2/Pods-HelloWorld2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		997CD7DE8BF3A76A19992584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloWorld2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84F91D0A2CA43EA40072C295 /* Sources */ = {
@@ -287,12 +371,14 @@
 		};
 		84F91D232CA43EA50072C295 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E443DC7250CEB99F48DDAAD /* Pods-HelloWorld2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7X75FNL228;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloWorld2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,12 +401,14 @@
 		};
 		84F91D242CA43EA50072C295 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 929865479B92C84DF57B2E53 /* Pods-HelloWorld2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7X75FNL228;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloWorld2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -363,6 +451,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84F91D252CA43EB20072C295 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84F91D262CA43EB20072C295 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84F91D252CA43EB20072C295 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84F91D062CA43EA40072C295 /* Project object */;
 }

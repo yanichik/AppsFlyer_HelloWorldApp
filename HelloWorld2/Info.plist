@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>afdevkey</key>
+	<string>fb8Q2zo9PAxeMYGSwXo6Bo</string>
+	<key>NSAdvertisingAttributionReportEndpoint</key>
+	<string>https://appsflyer-skadnetwork.com/</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Please give tracking permission</string>
 </dict>
 </plist>
